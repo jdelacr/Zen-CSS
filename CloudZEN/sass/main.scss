@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+html {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#zen-intro {
+    height: 1000px;
+    background-color: skyblue;
+
+    header {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../Assets/Sky_Castle_SVG.svg");
+        height: 700px;
+        width: 100%;
+        background-position: 50% 50%;
+        position: relative;
+        text-align: center;
+
+        h1{
+            position: absolute;
+            left: 47%;
+            margin-left: -50px;
+            top: 60%;
+            margin-top: -50px;
+        }
+        h2{
+            position: relative;
+            left: 44%;
+            margin-left: -50px;
+            top: 60%;
+            margin-top: -20px;
+            width: 273px;
+        }
+    }
+}
+
+.summary {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.summary::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -264px;
+    left: -100px;
+    z-index: 1;
+    background-image: url(../Assets/Cloud_SVG_2.svg);
+    background-repeat: no-repeat;
+}
+
+.summary::after{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -264px;
+    right: 0px;
+    z-index: 1;
+    background-image: url(../Assets/Cloud_SVG_1.svg);
+    background-repeat: no-repeat;
+    background-position: 100px;
+}
+
+#zen-supporting {
+    background-color: skyblue;
+    position: relative;
+    background-image: url(../Assets/Scroll_SVG.svg);
+    background-position: top center;
+    background-size: contain;
+    height: 1400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 180px;
+
+    >*{
+        margin: 0px 420px;
+    }
+    
+}
+
+.sidebar {
+    background-image: url(../Assets/Castle_Wall_SVG.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: skyblue;
+}
+
+.sidebar .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 750px;
+    width: 50%;
+    margin: 0 auto;
+
+
+    .design-selection {
+        flex: 0 0 90%;
+        background-image: url(../Assets/Scroll_3_SVG.svg);
+        background-repeat: no-repeat;
+        background-size: 85% auto;
+        padding: 1rem;
+
+    }
+
+    .design-archives,
+    .zen-resources {
+        flex: 0 0 25%;
+    }
+
+    .design-archives {
+        background-image: url(../Assets/Scroll_2_SVG.svg);
+        background-repeat: no-repeat;
+        background-size: 53% 97%;
+        padding: 1rem;
+    }
+
+    .zen-resources {
+        background-image: url(../Assets/Scroll_3_SVG.svg);
+        background-repeat: no-repeat;
+        background-size: 70% auto;
+        padding: 1rem;
+    }
+}
