@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+html {
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+body {
+    background-image: url('../Assets/IsometricCity.png');
+    background-size: cover;
+    max-width: 1980px;
+    max-height: 1080px;
+    color: yellow;
+
+}
+
+#css-zen-garden .page-wrapper {
+    height: 1000px;
+    width: 1000px;
+    position: relative;
+}
+
+.intro {
+    position: absolute;
+    top: 10.29rem;
+    right: -36.33rem;
+    transform: skew(0deg, 30deg);
+    height: 362px;
+    overflow: scroll;
+    width: 497px;
+    background: linear-gradient(0deg, #32658d 0%, #9343cc 100%);
+
+    a:hover {
+        color: white;
+        background-size: 4px 50px;
+        font-size: 1.5rem !important;
+    }
+
+    header {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .summary {
+        text-align: center;
+    }
+
+    .preamble {
+
+        margin: 1rem;
+
+        h3 {
+            text-align: center;
+        }
+
+    }
+}
+
+.main {
+    position: absolute;
+    top: 17rem;
+    left: 19.6rem;
+    overflow-x: scroll;
+    height: 604px;
+    transform: skew(0deg, -30deg);
+    width: 262px;
+    background: linear-gradient(0deg, #813a96 0%, #3480cf 100%);
+
+    * {
+        margin: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        font-size: .8rem;
+
+        &:last-child {
+            margin-bottom: 3rem;
+        }
+    }
+
+    footer {
+        font-size: .8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.sidebar {
+    position: absolute;
+    bottom: 18.3rem;
+    right: -36.4rem;
+    transform: skew(0deg, 30deg);
+    background: linear-gradient(0deg, #9252a4 0%, #9c45b3 100%);
+    height: 121px;
+    overflow: scroll;
+    width: 496px;
+
+    * {
+        margin: .5rem;
+
+        a:hover {
+            color: white;
+            background-size: 4px 50px;
+            font-size: 1.5rem !important;
+
+        }
+    }
+
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+a {
+    background:
+        linear-gradient(to bottom, #9c45b3 0%,
+            #c94b5b 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 10px;
+    color: yellow;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a:hover {
+    color: white;
+    background-size: 4px 50px;
+    font-size: 1rem;
+}
